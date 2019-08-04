@@ -12,12 +12,14 @@ Content-Type: application/json
 
 {
   "username": "user",
-  "password": "user"
+  "password": "user3"
 }
 ###
 GET http://localhost:8001/api/v1/user/test
 ###
-GET http://localhost:8001/api/v1/square/
+GET http://localhost:8001/api/v1/square/test?token=aaa
+###
+GET http://localhost:8001/api/v1/square/test
 ###
 
 GET http://localhost:8001/api/v1/user/login
